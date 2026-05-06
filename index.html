@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAP Couriers LLC.</title>
+    <link rel="stylesheet" href="css/styles.css.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <img src="images/FullLogo.jpg" alt="TAP Couriers LLC Logo">
+
+    <nav aria-label="Primary Navigation">
+        <ul>
+            <li><a href="#">Medical Equipment</a></li>
+            <li><a href="#">Clinic &amp; Pharmacy</a></li>
+            <li><a href="#">Specimen Transport</a></li>
+            <li><a href="#">Medicinal Delivery</a></li>
+        </ul>
+    </nav>
+
+    <button type="button">Sign In</button>
+</header>
+
+<main>
+
+<section>
+    <h1>Reliable Medical Courier Services</h1>
+    <h2>Delivering what matters, on time.</h2>
+</section>
+
+<section class="hero">
+    <h2>Delivery Services Overview</h2>
+    <img src="images/Delivry.webp" alt="Medical delivery in progress">
+</section>
+
+<section class="services">
+    <h2>What We Can Deliver to You</h2>
+
+    <article class="service-box">
+        <img src="images/MedEquip.webp" alt="Medical Equipment">
+        <h3>Medical Equipment</h3>
+        <p>Lorem ipsum ipsum lorem</p>
+    </article>
+
+    <article class="service-box">
+        <img src="images/ClinicPic.webp" alt="Clinic and Pharmacy">
+        <h3>Clinic &amp; Pharmacy</h3>
+        <p>Lorem ipsum ipsum lorem</p>
+    </article>
+
+    <article class="service-box">
+        <img src="images/SpecPic.webp" alt="Specimen Transport">
+        <h3>Specimen Transport</h3>
+        <p>Lorem ipsum ipsum lorem</p>
+    </article>
+
+    <article class="service-box">
+        <img src="images/MedPic.webp" alt="Medicinal Delivery">
+        <h3>Medicinal Delivery</h3>
+        <p>Lorem ipsum ipsum lorem</p>
+    </article>
+</section>
+
+<button id="rotateAreas">View Next Location</button>
+
+<section class="areas">
+    <h2>Areas We Service</h2>
+
+    <figure class="area active">
+        <img src="images/Loc1.webp" alt="Service Area One">
+        <figcaption>Lorem Ipsum</figcaption>
+    </figure>
+
+    <figure class="area">
+        <img src="images/Loc2.webp" alt="Service Area Two">
+        <figcaption>Lorem Ipsum</figcaption>
+    </figure>
+
+    <figure class="area">
+        <img src="images/Loc3.webp" alt="Service Area Three">
+        <figcaption>Lorem Ipsum</figcaption>
+    </figure>
+
+    <figure class="area">
+        <img src="images/Loc4.webp" alt="Service Area Four">
+        <figcaption>Lorem Ipsum</figcaption>
+    </figure>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <label>First Name</label>
+        <input type="text">
+
+        <label>Last Name</label>
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email">
+
+        <label>Message</label>
+        <textarea></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 TAP Couriers LLC.</p>
+</footer>
+
+<script>
+    const button = document.getElementById("rotateAreas");
+    const cards = document.querySelectorAll(".area");
+    let index = 0;
+
+    button.addEventListener("click", () => {
+        cards[index].classList.remove("active");
+        index = (index + 1) % cards.length;
+        cards[index].classList.add("active");
+    });
+</script>
+
+</body>
+</html>
